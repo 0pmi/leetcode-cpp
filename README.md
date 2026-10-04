@@ -10,6 +10,6 @@ Rozwiązania zadań z [LeetCode](https://leetcode.com) w C++. Pomysł, kluczowa 
 
 ## Nowe zadanie
 
-1. Skopiuj `template.cpp` do `problems/` jako `NNNN-slug.cpp`, gdzie slug to końcówka adresu zadania, np. `0015-3sum.cpp`.
-2. W CLionie: Tools → CMake → Reload CMake Project – zadanie pojawi się na liście konfiguracji obok przycisku Run.
-3. Wklej klasę z edytora LeetCode, przepisz przykłady z treści do `main()` i uruchom (Shift+F10).
+1. Kopia `template.cpp` w `problems/` jako `NNNN-slug.cpp`, gdzie slug to końcówka adresu zadania, np. `0015-3sum.cpp`.
+2. W CLionie: Tools → CMake → Reload CMake Project – zadanie pojawia się na liście konfiguracji obok przycisku Run.
+3. Klasa z edytora LeetCode do pliku, przykłady z treści do `main()`, uruchomienie: Shift+F10.

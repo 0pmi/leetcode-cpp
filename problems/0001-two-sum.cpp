@@ -1,25 +1,22 @@
 // 1. Two Sum (Easy) – https://leetcode.com/problems/two-sum/
-// Notatka w Obsidianie: 30 LeetCode/0001 Two Sum
-//
-// Klasę Solution wklejasz na LeetCode bez zmian, main() z testami zostaje tutaj.
 
 #include <algorithm>
 #include <vector>
 
 #include "check.h"
 
-using namespace std;  // jak na LeetCode – dzięki temu kod klasy wklejasz tam bez poprawek
+using namespace std;  // jak na LeetCode
 
 class Solution {
 public:
     vector<int> twoSum(vector<int>& nums, int target) {
-        // TODO: Twoje rozwiązanie
+        // TODO: Rozwiązanie
         return {};
     }
 };
 
 int main() {
-    // Kolejność indeksów w odpowiedzi jest dowolna, więc przed porównaniem sortujemy wynik.
+    // Kolejność indeksów w odpowiedzi jest dowolna – wynik sortowany przed porównaniem.
     auto solve = [](vector<int> nums, int target) {
         vector<int> result = Solution().twoSum(nums, target);
         sort(result.begin(), result.end());
@@ -31,7 +28,7 @@ int main() {
     check(solve({3, 2, 4}, 6), {1, 2}, "Example 2");
     check(solve({3, 3}, 6), {0, 1}, "Example 3");
 
-    // Własne przypadki – dopisz np. liczby ujemne albo parę na samym końcu tablicy
+    // Własne przypadki
 
     return summary();
 }

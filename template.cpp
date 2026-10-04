@@ -1,7 +1,6 @@
 // N. Tytuł (Poziom) – https://leetcode.com/problems/slug/
-// Notatka w Obsidianie: 30 LeetCode/NNNN Tytuł
 //
-// Nowe zadanie: skopiuj ten plik do problems/ jako NNNN-slug.cpp
+// Nowe zadanie: kopia tego pliku w problems/ jako NNNN-slug.cpp
 // (np. 0015-3sum.cpp), potem Tools → CMake → Reload CMake Project.
 
 #include <vector>
@@ -10,7 +9,7 @@
 
 using namespace std;  // jak na LeetCode
 
-// Tu wklej klasę Solution z edytora LeetCode (sama sygnatura metody)
+// Klasa Solution z edytora LeetCode (na start sama sygnatura metody)
 class Solution {
 public:
 };
@@ -18,6 +17,8 @@ public:
 int main() {
     // Przykłady z treści zadania, np.:
     // check(Solution().method(args), expected, "Example 1");
+
+    // Własne przypadki
 
     return summary();
 }

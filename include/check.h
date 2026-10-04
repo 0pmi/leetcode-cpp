@@ -1,6 +1,6 @@
 #pragma once
 // Mini-testy do zadań.
-//   check(wynik, oczekiwane, "opis");  – wypisuje PASS albo FAIL z obiema wartościami
+//   check(wynik, oczekiwane, "opis");  – PASS albo FAIL z obiema wartościami
 //   return summary();                  – na końcu main(): podsumowanie, kod wyjścia 0 = wszystko przeszło
 
 #include <cstddef>
@@ -8,7 +8,7 @@
 #include <string>
 #include <vector>
 
-// Pozwala wypisać vector przez cout, np. [0, 1]
+// Wypisywanie vectora przez cout, np. [0, 1]
 template <typename T>
 std::ostream& operator<<(std::ostream& os, const std::vector<T>& v) {
     os << '[';
@@ -26,8 +26,8 @@ template <typename T>
 struct same_type { using type = T; };
 }  // namespace check_detail
 
-// Typ oczekiwanej wartości jest brany z wyniku (same_type),
-// dlatego można pisać check(wynik, {0, 1}, "...") zamiast check(wynik, vector<int>{0, 1}, "...").
+// Typ oczekiwanej wartości brany z wyniku (same_type), dzięki temu wystarczy
+// check(wynik, {0, 1}, "...") zamiast check(wynik, vector<int>{0, 1}, "...").
 template <typename T>
 void check(const T& actual, const typename check_detail::same_type<T>::type& expected, const std::string& label) {
     if (actual == expected) {
