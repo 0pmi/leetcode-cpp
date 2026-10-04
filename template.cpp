@@ -15,8 +15,12 @@ public:
 };
 
 int main() {
+    // Metody z LeetCode biorą vector<int>& (referencję do istniejącej zmiennej),
+    // więc {1, 2, 3} nie przejdzie wprost – stąd lambda, która bierze kopię:
+    // auto solve = [](vector<int> nums) { return Solution().method(nums); };
+
     // Przykłady z treści zadania, np.:
-    // check(Solution().method(args), expected, "Example 1");
+    // check(solve({1, 2, 3}), expected, "Example 1");
 
     // Własne przypadki
 

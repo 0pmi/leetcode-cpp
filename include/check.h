@@ -35,7 +35,8 @@ void check(const T& actual, const typename check_detail::same_type<T>::type& exp
         std::cout << "PASS  " << label << '\n';
     } else {
         ++check_detail::failed;
-        std::cout << "FAIL  " << label << ": got " << actual << ", expected " << expected << '\n';
+        // boolalpha: bool wypisywany jako true/false zamiast 1/0
+        std::cout << std::boolalpha << "FAIL  " << label << ": got " << actual << ", expected " << expected << '\n';
     }
 }
 

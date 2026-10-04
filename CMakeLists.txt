@@ -11,7 +11,8 @@ file(GLOB PROBLEMS CONFIGURE_DEPENDS "${CMAKE_SOURCE_DIR}/problems/*.cpp")
 
 foreach (source IN LISTS PROBLEMS)
     get_filename_component(name "${source}" NAME_WE)
-    add_executable("${name}" "${source}")
+    add_executable("${name}" "${source}"
+            problems/0217-contains-duplicate.cpp)
     target_include_directories("${name}" PRIVATE "${CMAKE_SOURCE_DIR}/include")
     if (MSVC)
         target_compile_options("${name}" PRIVATE /W4)
