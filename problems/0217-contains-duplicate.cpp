@@ -6,7 +6,9 @@
 #include "check.h"
 
 using namespace std;
-
+// Podejście: hash set.
+// Złożoność czasowa: O(n)
+// Złożoność pamięciowa: O(n)
 class Solution {
 public:
     bool containsDuplicate(vector<int> &nums) {
