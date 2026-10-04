@@ -1,0 +1,4 @@
+# Pliki CLiona i kompilacji
+.idea/
+cmake-build-*/
+build/
